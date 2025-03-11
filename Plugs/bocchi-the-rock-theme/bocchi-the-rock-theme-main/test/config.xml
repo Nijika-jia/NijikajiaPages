@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="config.xsd">
+    
+    <!-- 应用配置 -->
+    <app>
+        <name>测试应用</name>
+        <version>1.0.0</version>
+        <description>XML配置文件测试</description>
+    </app>
+    
+    <!-- 数据库配置 -->
+    <database>
+        <connection id="primary">
+            <driver>mysql</driver>
+            <host>localhost</host>
+            <port>3306</port>
+            <name>testdb</name>
+            <user>admin</user>
+            <password encrypted="true">enc:password123</password>
+            <pool>
+                <min-size>5</min-size>
+                <max-size>20</max-size>
+                <timeout>30000</timeout>
+            </pool>
+        </connection>
+        
+        <connection id="replica">
+            <driver>mysql</driver>
+            <host>replica.example.com</host>
+            <port>3306</port>
+        </connection>
+    </database>
+    
+    <!-- 缓存配置 -->
+    <cache>
+        <provider>redis</provider>
+        <servers>
+            <server>
+                <host>localhost</host>
+                <port>6379</port>
+            </server>
+            <server>
+                <host>backup.example.com</host>
+                <port>6379</port>
+            </server>
+        </servers>
+    </cache>
+    
+    <!-- 日志配置 -->
+    <logging>
+        <level>INFO</level>
+        <handlers>
+            <handler type="console">
+                <format>[%d] [%p] %m%n</format>
+            </handler>
+            <handler type="file">
+                <path>/var/log/app.log</path>
+                <rotation>
+                    <max-size>10MB</max-size>
+                    <max-files>5</max-files>
+                </rotation>
+            </handler>
+        </handlers>
+    </logging>
+</configuration> 

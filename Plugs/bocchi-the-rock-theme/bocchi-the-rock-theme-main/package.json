@@ -1,0 +1,69 @@
+{
+  "name": "bocchi-the-rock-theme",
+  "displayName": "Bocchi The Rock Theme",
+  "description": "VS Code theme inspired by Bocchi The Rock!",
+  "version": "1.0.0",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Bocchi - Hitori Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bocchi-hitori-color-theme.json"
+      },
+      {
+        "label": "Bocchi - Hitori Light",
+        "uiTheme": "vs",
+        "path": "./themes/bocchi-hitori-light-color-theme.json"
+      },
+      {
+        "label": "Bocchi - Ikuyo Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bocchi-ikuyo-color-theme.json"
+      },
+      {
+        "label": "Bocchi - Ikuyo Light",
+        "uiTheme": "vs",
+        "path": "./themes/bocchi-ikuyo-light-color-theme.json"
+      },
+      {
+        "label": "Bocchi - Nijika Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bocchi-nijika-color-theme.json"
+      },
+      {
+        "label": "Bocchi - Nijika Light",
+        "uiTheme": "vs",
+        "path": "./themes/bocchi-nijika-light-color-theme.json"
+      },
+      {
+        "label": "Bocchi - Ryo Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bocchi-ryo-color-theme.json"
+      },
+      {
+        "label": "Bocchi - Ryo Light",
+        "uiTheme": "vs",
+        "path": "./themes/bocchi-ryo-light-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/bocchi-the-rock-theme"
+  },
+  "keywords": [
+    "theme",
+    "dark theme",
+    "light theme",
+    "bocchi the rock",
+    "anime"
+  ],
+  "icon": "icon.png"
+}

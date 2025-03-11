@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>主题测试页面</title>
+    <style>
+        /* CSS 注释 */
+        .container {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        #main-title {
+            color: #333;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML 注释 -->
+    <div class="container">
+        <h1 id="main-title">测试标题</h1>
+        <p class="description">这是一个段落</p>
+        
+        <script>
+            // JavaScript 注释
+            function testFunction() {
+                const message = "Hello World";
+                let counter = 0;
+                
+                for (let i = 0; i < 5; i++) {
+                    console.log(`计数: ${i}`);
+                }
+                
+                return {
+                    name: "测试对象",
+                    value: 42
+                };
+            }
+            
+            document.addEventListener('DOMContentLoaded', () => {
+                const result = testFunction();
+                console.log(result);
+            });
+        </script>
+    </div>
+</body>
+</html> 
